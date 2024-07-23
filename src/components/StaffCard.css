@@ -1,0 +1,58 @@
+.staffCard {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.staffCard.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.staffImageContainer {
+  position: relative;
+}
+
+.staffImage {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.staffCard:hover .staffImage {
+  transform: scale(1.05);
+}
+
+.staffText {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s, bottom 0.3s;
+  white-space: nowrap;
+}
+
+.staffCard:hover .staffText {
+  opacity: 1;
+  bottom: 10px;
+}
+
+.staffName {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}

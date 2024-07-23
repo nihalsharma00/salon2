@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #7b4397, #dc2430);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px; /* Ensures the logo is square for circular styling */
+  border-radius: 50%; /* Makes the logo circular */
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* Enlarges the logo on hover */
+}
+
+.nav .link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+  margin: 0 40px; /* Adds space around each link */
+}
+
+.nav .link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+  transform: scale(1.1); /* Pop-up effect on hover */
+}
