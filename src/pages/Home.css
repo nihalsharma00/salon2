@@ -7,7 +7,12 @@
   border-radius: 15px;
   animation: fadeInUp 1s ease-in-out;
 }
-
+ .map-container {
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+}
 @media (max-width: 768px) {
   .home {
     padding: 30px 10px;
