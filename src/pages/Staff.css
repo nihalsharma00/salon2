@@ -1,25 +1,66 @@
 .staff {
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(to right, #7b4397, #dc2430);
-  color: white;
+  background-color: #f8f8f8;
+}
+
+.staff h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 40px;
 }
 
 .staffList {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
-.staffList .staffCard {
-  animation: fadeInUp 0.5s ease-out forwards;
+.staffCard {
+  width: 250px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.5s forwards ease-in-out;
+}
+
+.staffCard.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.staffCard img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.staffCard h3 {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.staffCard p {
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.staffCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
