@@ -2,11 +2,14 @@ import React from 'react';
 import './Services.css';
 
 const services = [
-  'Haircut',
-  'Coloring',
-  'Styling',
-  'Manicure',
-  
+  'Classic Haircut',
+  'Beard Trim & Haircut',
+  'Root Touch-Up Coloring',
+  'Full Hair Coloring',
+  'Hair Styling & Blow Dry',
+  'Bridal Hair Styling',
+  'Classic Manicure',
+  'Gel Manicure',
 ];
 
 const Services = () => (
